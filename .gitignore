@@ -1,19 +1,30 @@
-# Visual Studio
+# Carpetas temporales y de usuario de Visual Studio
 .vs/
 *.user
 *.suo
 
-# Build
+# Layouts y configuraciones por usuario
+*.csproj.user
+*.sln.docstates
+.vscode/
+
+# Build output
 bin/
 obj/
 *.exe
 *.dll
+*.pdb
 
-# NuGet
+# Paquetes NuGet locales
 packages/
 *.nupkg
 
-# Otros
+# Logs y archivos temporales
 *.log
+*.cache
 *.db
-*.pdb
+
+# Archivos del sistema
+Thumbs.db
+ehthumbs.db
+Desktop.ini
