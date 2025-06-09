@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace AgendaEstetica.Model
 {
-    public class AgendaCitaHorarioCita
+    public class AgendaCitaHorario
     {
         public int IdHorarioCitas { get; set; }
-        public HorarioCita HorarioCita { get; set; }
-
         public int IdAgendaCitas { get; set; }
-        public AgendaCita AgendaCita { get; set; }
+        public DateTime? CreatedAt { get; set; }
+
+        public HorarioCita? HorarioCita { get; set; }
+        public AgendaCitas? AgendaCita { get; set; }
     }
 }

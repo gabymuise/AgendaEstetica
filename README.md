@@ -32,7 +32,7 @@
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/tuusuario/AgendaEstetica.git
+git clone https://github.com/gabymuise/AgendaEstetica.git
 cd AgendaEstetica
 ```
 

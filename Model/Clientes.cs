@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 
 namespace AgendaEstetica.Model
 {
-    public class Cliente
+    public class Clientes
     {
         public int IdCliente { get; set; }
-        public string NombreApellido { get; set; }
-        public string Telefono { get; set; }
+        public string? NombreApellido { get; set; }
+        public string? Telefono { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public DateTime? UpdatedAt { get; set; }
+        public DateTime? DeletedAt { get; set; }
 
-        // Relación: Un cliente tiene muchas citas
-        public List<AgendaCita> Citas { get; set; }
+        public ICollection<AgendaCitas>? AgendaCitas { get; set; }
     }
 }

@@ -8,16 +8,17 @@ namespace AgendaEstetica.Model
 {
     public class HorarioCita
     {
-        public int IdHorarios { get; set; }
-        public string Dia { get; set; } // ej: "Lunes", "Martes"
-        public DateTime Fecha { get; set; }
-        public TimeSpan Hora { get; set; }
-        public bool Disponible { get; set; }
-
+        public int Idhorarios { get; set; }
+        public string? Dia { get; set; }
+        public DateTime? Fecha { get; set; }
+        public TimeSpan? Hora { get; set; }
         public int IdEmpleado { get; set; }
-        public Empleado Empleado { get; set; }
+        public bool Disponible { get; set; }
+        public DateTime? CreatedAt { get; set; }
+        public DateTime? UpdatedAt { get; set; }
+        public DateTime? DeletedAt { get; set; }
 
-        // Relación con tabla puente
-        public List<AgendaCitaHorarioCita> AgendaCitaHorarios { get; set; }
+        public Empleados? Empleado { get; set; }
+        public ICollection<AgendaCitaHorario>? AgendaCitaHorarios { get; set; }
     }
 }

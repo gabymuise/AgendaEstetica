@@ -6,14 +6,16 @@ using System.Threading.Tasks;
 
 namespace AgendaEstetica.Model
 {
-    public class Empleado
+    public class Empleados
     {
         public int IdEmpleado { get; set; }
         public string Nombre { get; set; }
         public string Especialidad { get; set; }
         public string Telefono { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public DateTime? UpdatedAt { get; set; }
+        public DateTime? DeletedAt { get; set; }
 
-        // Relación: Un empleado tiene muchos horarios
-        public List<HorarioCita> Horarios { get; set; }
+        public ICollection<HorarioCita> HorarioCitas { get; set; }
     }
 }
