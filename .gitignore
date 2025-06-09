@@ -1,0 +1,19 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Build
+bin/
+obj/
+*.exe
+*.dll
+
+# NuGet
+packages/
+*.nupkg
+
+# Otros
+*.log
+*.db
+*.pdb
