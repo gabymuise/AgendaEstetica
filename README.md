@@ -1,27 +1,29 @@
-﻿# 💅 AgendaEstetica
+# 💅 AgendaEstetica
 
-AgendaEstetica es una aplicación de escritorio desarrollada en C# con Windows Forms (WinForms) y Entity Framework Core, pensada para gestionar una agenda de turnos en una estética. Permite organizar citas, clientes, empleados y servicios ofrecidos, centralizando la información en una base de datos SQL Server.
+**AgendaEstetica** es una aplicación de escritorio desarrollada en **C# (WinForms)** con **Entity Framework Core** y **SQL Server** como base de datos. El sistema permite gestionar turnos, empleados, clientes y servicios de una estética o centro de belleza, facilitando la organización diaria y el seguimiento de citas.
 
 ---
 
 ## 🚀 Características principales
 
-- Registro y gestión de **clientes**.
-- Registro de **empleados** y sus especialidades.
-- Administración de **servicios** (nombre, precio, duración, descripción).
-- Agenda de **citas** con asignación de horario, cliente, servicio y profesional.
-- Gestión del estado de la cita: pagado / finalizado.
-- CRUD completo para cada entidad.
+- ✅ Gestión de **Clientes** (nombre, teléfono)
+- ✅ Gestión de **Empleados** (nombre, especialidad, teléfono)
+- ✅ Registro de **Servicios** (nombre, precio, duración, descripción)
+- ✅ Administración de **Horarios de Cita**
+- ✅ Creación de **Agenda de Citas** vinculadas a clientes, empleados y servicios
+- ✅ Seguimiento del estado de la cita (pagada, finalizada)
+- ✅ Asociación entre horarios y citas (relación muchos a muchos)
 
 ---
 
 ## 🛠️ Tecnologías utilizadas
 
-- **C#** (Windows Forms)
-- **.NET 6 o superior**
-- **Entity Framework Core**
-- **SQL Server** (Local o en red)
-- **MINGW64 / Git Bash** para control de versiones
+- 💻 **Lenguaje:** C# (.NET 6 o superior)
+- 🖼️ **Interfaz gráfica:** Windows Forms
+- 🗃️ **Base de datos:** SQL Server
+- 🧠 **ORM:** Entity Framework Core
+- ⚙️ **IDE recomendado:** Visual Studio 2022
+- 🐙 **Control de versiones:** Git + Git Bash (MINGW64)
 
 ---
 
@@ -32,6 +34,7 @@ AgendaEstetica es una aplicación de escritorio desarrollada en C# con Windows F
 ```bash
 git clone https://github.com/tuusuario/AgendaEstetica.git
 cd AgendaEstetica
+```
 
 ### 2️⃣ Crear la base de datos en SQL Server
 
@@ -121,3 +124,5 @@ CREATE TABLE AgendaCitas_has_HorarioCitas (
     FOREIGN KEY (idAgendaCitas) REFERENCES AgendaCitas(idAgendaCitas)
 );
 GO
+```
+
