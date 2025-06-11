@@ -7,7 +7,7 @@ public class AgendaEsteticaContext : DbContext
     public DbSet<Empleados> Empleados { get; set; }
     public DbSet<Clientes> Clientes { get; set; }
     public DbSet<Servicios> Servicios { get; set; }
-    public DbSet<HorarioCita> HorarioCitas { get; set; }
+    public DbSet<HorarioCita> HorarioCita { get; set; }
     public DbSet<AgendaCitas> AgendaCitas { get; set; }
     public DbSet<AgendaCitaHorario> AgendaCitaHorarios { get; set; }
 
