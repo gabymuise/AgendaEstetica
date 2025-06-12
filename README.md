@@ -33,7 +33,6 @@
 
 ```bash
 git clone https://github.com/gabymuise/AgendaEstetica.git
-cd AgendaEstetica
 ```
 
 ### 2️⃣ Crear la base de datos en SQL Server
