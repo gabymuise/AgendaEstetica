@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AgendaEstetica")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0783fc65aa2262de4f6390a225a5495362f2e6e9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ed9971c156d89148f1cbfdc262c611d3dce04dd")]
 [assembly: System.Reflection.AssemblyProductAttribute("AgendaEstetica")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AgendaEstetica")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
